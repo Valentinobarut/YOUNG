@@ -45,6 +45,34 @@ nav ul li a:hover{
     background-color: rgb(115, 109, 107);
 }/* TERMINA BARRA DE MENU */
 
+/* INICIA VIDEO */
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.audio1{
+    /* width: 100%;
+    margin: auto;
+    margin-left: 620px; */
+    width: 100%;      /* Ancho responsivo */
+    display: block;   /* Asegura que el reproductor sea un elemento a nivel de bloque */
+    margin: 0 auto;   /* Centra el reproductor horizontalmente */
+    
+}/* TERMINA VIDEO */
+
 
 main{
     margin: 2rem;
@@ -181,6 +209,19 @@ footer{
         grid-template-columns: 1fr;
     }
 
+   .parte1{
+    width: 80%;
+   }
+   
+   .video-container {
+    padding-bottom: 75%;
+}
+.audio1 {
+    width: 90%;   /* Un poco menos que el ancho completo para dar margen */
+    margin: 10px auto; /* Aumenta el margen superior e inferior ligeramente */
+}
+   
+   
 }/* TERMINA CELULAR */
 
 /* TABLET */
@@ -212,5 +253,12 @@ footer{
 
     .pie2{
         grid-template-columns: repeat(2,1fr);
+    }
+    .video-container {
+        padding-bottom: 75%;
+    }
+    .audio1 {
+        width: 90%;   /* Un poco menos que el ancho completo para dar margen */
+        margin: 10px auto; /* Aumenta el margen superior e inferior ligeramente */
     }
 }
